@@ -177,7 +177,7 @@ nav {
 .hearder {
     height: 90vh;
     width: 100%;
-    background: url('img/background.jpg') no-repeat;
+    background: url('background.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
