@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    nav {
+        height: fit-content;
+    }
+
+    body {
+        min-height: 90vh;
+    }
+</style>
+
+
+<body>
+    <!--Navbar start here-->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav class="hidden" id="menu">
+        <ul class="uppernavbar flex-spece-around">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regester.html">Regester</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img src="img/profile.jpg" alt="profile_icon" class="profile_icon"></a></li>
+        </ul>
+
+        <ul class="lowernavbar flex-spece-around">
+            <li><a href="index.html">Labib Express</a></li>
+            <li>
+                <a href="cart.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 product- $142.44</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Navbar start here-->
+
+    <main>
+        <section class="flex-center contact">
+            <h2 class="contact_heading text_center">Contact Us</h2>
+            <div class="container flex-center">
+                <div class="card">
+                    <form action="">
+                        <div class="form_action">
+                            <label for="name">Email</label>
+                            <input type="email" name="email" id="name" required autocomplete="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form_action">
+                            <label for="name">Name</label>
+                            <input type="text" name="Name" id="name" required autocomplete="Name" placeholder="Name">
+                        </div>
+                        <div class="form_action">
+                            <label for="Message">Message</label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <button type="submit" class="btn regester-btn">Submit now</button>
+                    </form>
+                </div>
+                <div class="address flex-spece-around">
+                    <div>
+                        <address>
+                            <p>Bangladesh</p>
+                            <p>Keranigonj,1310</p>
+                            <p>Call: +8801996302048</p>
+                        </address>
+
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.400193607986!2d90.38680941512803!3d23.697398796715547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b93c44a09fa9%3A0xe26c8dce02b9e950!2sCharail%20Play%20Ground!5e0!3m2!1sen!2sbd!4v1675147272245!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Footer start here-->
+    <footer class="flex-spece-around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="email" placeholder="Enter your Email" name="subscribe" class="input_subscribe">
+            <button type="submit" class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2023 Labib Express.All rights rserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Labib-Express-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        position: relative;
+        min-height: 89vh;
+    }
+
+    nav {
+        height: fit-content;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <!--Navbar start here-->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav class="hidden" id="menu">
+        <ul class="uppernavbar flex-spece-around">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regester.html">Regester</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img src="img/profile.jpg" alt="profile_icon" class="profile_icon"></a></li>
+        </ul>
+
+        <ul class="lowernavbar flex-spece-around">
+            <li><a href="index.html">Labib Express</a></li>
+            <li>
+                <a href="cart.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 product- $142.44</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Navbar start here-->
+
+    <main class="flex-center card-main">
+        <div class="cart_container">
+            <div class="card_items">
+                <div class="card_heading card1">
+                    <h2>Shopping items [2]</h2>
+                    <div class="card_heading-action">
+                        <label for="Select">
+                            <input type="checkbox" name="select" id="select">
+                            Select all items
+                        </label>
+                        <i class="fas fa-trash-alt"></i>
+                        <button type="submit" class="btn">Shopping More</button>
+                    </div>
+                </div>
+                <div class="card_item flex-spece-around card">
+                    <input type="checkbox" name="select" id="select">
+                    <img src="img/product1.jpg" alt="" class="card_item-img">
+                    <div class="card_item-dis">
+                        <h3>Sony v-4 Headphone</h3>
+                        <div class="card_item-price">
+                            <h4>Price: $225</h4>
+                            <p class="shipping">Free shipping</p>
+                        </div>
+                    </div>
+                    <div class="card_item-action">
+                        <button type="submit" class="card-action-btn btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <button type="submit" class="btn card-action-btn">
+                            <i class="fas fa-add"></i>
+                        </button>
+                        <span>3</span>
+                        <button type="submit" class="btn card-action-btn">
+                            <i class="fas fa-minus"></i>
+                        </button>
+
+
+                    </div>
+                </div>
+
+                <div class="card_item flex-spece-around card">
+                    <input type="checkbox" name="select" id="select">
+                    <img src="img/product2.jpg" alt="" class="card_item-img">
+                    <div class="card_item-dis">
+                        <h3>Nike Shoes</h3>
+                        <div class="card_item-price">
+                            <h4>Price: $150.50</h4>
+                            <p class="shipping">Shipping cost: $2.25</p>
+                        </div>
+                    </div>
+
+                    <div class="card_item-action">
+                        <button type="submit" class="card-action-btn btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                        <button type="submit" class="btn card-action-btn">
+                            <i class="fas fa-add"></i>
+                        </button>
+                        <span>2</span>
+                        <button type="submit" class="btn card-action-btn btn">
+                            <i class="fas fa-minus"></i>
+                        </button>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card_payment">
+                <div class="payment_cost card">
+                    <h2>Payment Summary</h2>
+                    <div>
+                        <p>Subtotal cost:</p>
+                        <p>$375.50</p>
+                    </div>
+                    <div>
+                        <p>Shipping cost:</p>
+                        <p>$2.50</p>
+                    </div>
+                    <div>
+                        <p>Total Cost:</p>
+                        <p>$377.00</p>
+                    </div>
+                    <button type="submit" class="btn payment-btn">Pay Now</button>
+                </div>
+
+                <div class="payment_methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer start here-->
+    <footer class="flex-spece-around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="email" placeholder="Enter your Email" name="subscribe" class="input_subscribe">
+            <button type="submit" class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2023 Labib Express.All rights rserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

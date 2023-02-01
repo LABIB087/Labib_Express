@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            min-height: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar start here-->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav class="hidden" id="menu">
+        <ul class="uppernavbar flex-spece-around">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regester.html">Regester</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img src="img/profile.jpg" alt="profile_icon" class="profile_icon"></a></li>
+        </ul>
+
+        <ul class="lowernavbar flex-spece-around">
+            <li><a href="index.html">Labib Express</a></li>
+            <li>
+                <a href="cart.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 product- $142.44</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Navbar start here-->
+
+    <!--Ptoduct info start here-->
+
+    <main class="flex-center">
+        <section class="flex-center info_section">
+            <div class="info_img">
+                <img src="img/product1.jpg" alt="">
+            </div>
+            <div class="product_info">
+                <div class="product_dis">
+                    <h4 class="product_name info_name">Sony v4 headphone</h4>
+                    <p class="info_dis">
+                        <strong>Info: </strong>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <div class="flex">
+                        <strong>Price:</strong>
+                        <h2 class="price">$200.45</h2>
+                    </div>
+                    <div class="flex">
+                        <strong>Rating:</strong>
+                        <p class="rating info_rating">Rating : 4.5/5</p>
+
+                    </div>
+                    <div class="flex">
+                        <strong>Categorie:</strong>
+                        <p class="info_rating">Headphone</p>
+                    </div>
+
+                    <button type="submit" class="btn add_btn info_btn">Add to cart</button>
+                    <button type="submit" class="btn add_btn info_btn"><a href="index.html" class="learn_more_btn">Back To Shopping</a></button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Ptoduct info start here-->
+
+    <!--Footer start here-->
+    <footer class="flex-spece-around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="email" placeholder="Enter your Email" name="subscribe" class="input_subscribe">
+            <button type="submit" class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2023 Labib Express.All rights rserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

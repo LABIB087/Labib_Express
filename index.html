@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML</title>
+
+    <!-- HTML -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar start here-->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav class="hidden" id="menu">
+        <ul class="uppernavbar flex-spece-around">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regester.html">Regester</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img src="img/profile.jpg" alt="profile_icon" class="profile_icon"></a></li>
+        </ul>
+
+        <ul class="lowernavbar flex-spece-around">
+            <li><a href="index.html">Labib Express</a></li>
+            <li>
+                <a href="cart.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 product- $377.00</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Navbar start here-->
+
+    <!--Header start here-->
+
+    <header class="hearder flex-spece-around">
+        <div class="hearder_text flex-spece-around">
+            <marquee class="text">Shop now for 50% off</marquee>
+        </div>
+        <div class="services flex-spece-around">
+            <article class="service flex-center">
+                <i class="fa-solid fa-truck i"></i>
+                <h3>Shipping service</h3>
+            </article>
+
+            <article class="service flex-center">
+                <i class="fa-brands fa-rocketchat i"></i>
+                <h3>Support 24/7</h3>
+            </article>
+
+            <article class="service flex-center">
+                <i class="fa-regular fa-credit-card i"></i>
+                <h3>Shipping service</h3>
+            </article>
+        </div>
+    </header>
+
+
+    <!--Header end here-->
+    <!--Main start here-->
+    <main class="flex-center main">
+        <span><i class="fa-solid fa-filter" id="filter_icon"> Filtet</i></span>
+
+        <section class="hidden" id="filter">
+            <div class="filters">
+                <ul class="filter flex-spece-around">
+                    <h2>Categories</h2>
+                    <li>
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">
+                            Phone
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="television">
+                            <input type="checkbox" name="television" id="television" value="television">
+                            Television
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="Computer">
+                            <input type="checkbox" name="computer" id="computer" value="computer">
+                            Computer
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="wacth">
+                            <input type="checkbox" name="wacth" id="wacth" value="wacth">
+                            Wacth
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="home">
+                            <input type="checkbox" name="home" id="home" value="home">
+                            Home & Living
+                        </label>
+                    </li>
+                </ul>
+
+                <ul class="filter flex-spece-around">
+                    <h2>Price Range</h2>
+                    <li>
+                        <label for="price1">
+                            <input type="radio" name="price1" id="price1" value="[5,25]">
+                            $5-$25
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="price2">
+                            <input type="radio" name="price2" id="price2" value="[25,50]">
+                            $25-$50
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="price3">
+                            <input type="radio" name="price3" id="price3" value="[50,100]">
+                            $50-$100
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="price4">
+                            <input type="radio" name="price4" id="price4" value="[100,200]">
+                            $100-$200
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="price5">
+                            <input type="radio" name="price5" id="price5" value="[500+]">
+                            $500+
+                        </label>
+                    </li>
+                </ul>
+                <ul class="filter flex-spece-around">
+                    <h2>Shipping Method</h2>
+                    <li>
+                        <label for="paid-shipping">
+                            <input type="radio" name="phone" id="phone" value="phone">
+                            Paid Shipping
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="free-shipping">
+                            <input type="radio" name="paid-shipping" id="paid-shipping" value="paid-shipping">
+                            Paid Shipping
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <div class="main-contant">
+            <section class="flex-spece-around actions">
+                <div class="action_sort">
+                    <label for="sort">
+                        Sort By:
+                    </label>
+                    <select name="sort" id="sort" class="select">
+                        <option value="recent">Most recent product</option>
+                        <option value="sold">Most sold product</option>
+                        <option value="rating">Top rating product</option>
+                        <option value="discount">Top discount product</option>
+                        <option value="get1">Buy 1 get 1</option>
+
+                    </select>
+                </div>
+                <div class="action_search">
+                    <input type="search" name="search" id="search" placeholder="Search your needs">
+                    <button type="submit" class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!--product section start here-->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>7 in stock</span>
+                        <hr class="hr-pro">
+                        <span>5 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product2.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Nike Shoes</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$150.50</h3>
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+
+                    </div>
+
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-pro">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="img/product1.jpg" alt="">
+                    <div>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </div>
+                    <div class="product_dis">
+                        <h4 class="product_name">Sony v4 headphone</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing ...<a href="product.html" class="larn_more">Learn more</a>
+                        </p>
+                        <h3 class="price">$200.45</h3>
+
+                        <p class="rating">Rating : 4.5/5</p>
+                        <button type="submit" class="btn add_btn">Add to cart</button>
+                        <button type="submit" class="btn add_btn"><a href="product.html" class="learn_more_btn">Learn more</a></button>
+                    </div>
+
+                </article>
+            </section>
+            <!--product section end here-->
+
+            <!--pagenation start here-->
+            <section class="page">
+                <button type="submit" class="btn page_btn">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button type="submit" class="btn page_btn">2</button>
+                <button type="submit" class="btn page_btn">3</button>
+                <button type="submit" class="btn page_btn">4</button>
+                <button type="submit" class="btn page_btn">5</button>
+                <button type="submit" class="btn page_btn">6</button>
+                <button type="submit" class="btn page_btn">7</button>
+                <button type="submit" class="btn page_btn">8</button>
+                <button type="submit" class="btn page_btn">9</button>
+                <button type="submit" class="btn page_btn">10</button>
+                <button type="submit" class="btn page_btn">...</button>
+                <button type="submit" class="btn page_btn">50</button>
+                <button type="submit" class="btn page_btn">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+
+            </section>
+
+            <!--pagenation end here-->
+
+        </div>
+    </main>
+    </div>
+
+    <!--Main start here-->
+
+
+
+
+
+
+
+    <!--Footer start here-->
+    <footer class="flex-spece-around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="email" placeholder="Enter your Email" name="subscribe" class="input_subscribe">
+            <button type="submit" class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2023 Labib Express.All rights rserved</p>
+        </div>
+    </footer>
+
+    <!--Footer end here-->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

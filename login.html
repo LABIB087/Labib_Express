@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    nav {
+        height: fit-content;
+    }
+
+    body {
+        min-height: 90vh;
+    }
+</style>
+
+<body>
+    <!--Navbar start here-->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav class="hidden" id="menu">
+        <ul class="uppernavbar flex-spece-around">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="regester.html">Regester</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img src="img/profile.jpg" alt="profile_icon" class="profile_icon"></a></li>
+        </ul>
+        <!--
+        <ul class="lowernavbar flex-spece-around">
+            <li><a href="index.html">Labib Express</a></li>
+            <li>
+                <a href="cart.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 product- $142.44</span>
+                </a>
+            </li>
+        </ul>
+        -->
+    </nav>
+    <!--Navbar start here-->
+
+    <main class="login">
+        <h2 class="regester_heading text_center">User Login</h2>
+        <div class="card">
+            <form action="">
+                <div class="form_action">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="name" required autocomplete="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form_action">
+                    <label for="name">Password</label>
+                    <input type="password" name="Name" id="name" required autocomplete="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn regester-btn">Regester Now</button>
+            </form>
+        </div>
+        <div class="continue">
+            <span>
+                <i class="fa-brands fa-google fa-3x"></i>
+                <span style="font-size: 19px;">Continue with Google</span>
+            </span>
+            <span>
+                <i class="fa-brands fa-apple fa-3x"></i>
+                <span style="font-size: 19px;">Continue with Apple ID</span>
+            </span>
+
+        </div>
+    </main>
+
+    <!--Footer start here-->
+    <footer class="flex-spece-around">
+        <div class="subscribe">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="email" placeholder="Enter your Email" name="subscribe" class="input_subscribe">
+            <button type="submit" class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2023 Labib Express.All rights rserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
